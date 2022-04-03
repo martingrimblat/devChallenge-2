@@ -1,0 +1,27 @@
+.container {
+
+	max-width: 1440px;
+	margin:auto;
+	width: 75%;
+}
+
+.flex {
+	display: flex;
+	align-content: space-between;
+	justify-content: space-between;
+}
+
+.flex-2 {
+	display: flex;
+}
+
+.title .flex{
+	justify-content: space-between;
+}
+
+.grid-container{
+	display: grid;
+	width: 100%;
+	grid-template-columns: auto auto auto;
+	justify-content: space-between;
+}

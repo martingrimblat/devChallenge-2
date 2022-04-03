@@ -1,0 +1,46 @@
+
+.title{
+	margin-bottom: 100px
+}
+
+.title h1{
+	font-size: 36px;
+	font-weight: 700;
+	font-family: 'PT serif'
+	letter-spacing: -0.045em;
+	line-height: 48px;
+}
+
+.who-we-are {
+
+	margin-right: 30px;
+	align-items: : flex-start;
+	justify-content: flex-start;
+}
+
+.who-we-are .short-text {
+
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.long-text {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	max-width: 439px
+}
+
+.cards img{
+
+	max-width: 238px
+}
+
+.role{
+	transform: rotate(-90deg);
+}
