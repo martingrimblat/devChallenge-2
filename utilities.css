@@ -1,8 +1,9 @@
 .container {
 
-	max-width: 1440px;
 	margin:auto;
 	width: 75%;
+	overflow: auto;
+	max-width: 1440px;
 }
 
 .flex {
@@ -13,6 +14,7 @@
 
 .flex-2 {
 	display: flex;
+	align-items: flex-start;
 }
 
 .title .flex{
@@ -23,5 +25,72 @@
 	display: grid;
 	width: 100%;
 	grid-template-columns: auto auto auto;
+	grid-template-rows: repeat(7,1fr);
 	justify-content: space-between;
+	grid-gap: 17% 1%;
+	grid-template-areas: 
+		"card-1 . card-3"
+		"card-1 card-2 card-3"
+		"card-1 card-2 card-3"
+		"card-4 card-2 card-6"
+		"card-4 card-5 card-6"
+		"card-4 card-5 card-6"
+		". card-5 .";
+
+}
+
+.card-1{
+	grid-area: card-1;
+}
+
+.card-2{
+	grid-area: card-2;
+}
+
+.card-3{
+	grid-area: card-3;
+}
+
+.card-4{
+	grid-area: card-4;
+}
+
+.card-5{
+	grid-area: card-5;
+}
+
+.card-6{
+	grid-area: card-6;
+}
+
+/* MOBILE */
+
+@media(max-width: 375px){
+
+	.main {
+		background-color: #5A5A5A
+	}
+
+	.title .flex{
+		flex-direction: column;
+	}
+
+	.grid-container{
+		display: grid;
+		width: 100%;
+		grid-template-columns: auto auto;
+		grid-template-rows: repeat(9,1fr);
+		justify-content: space-between;
+		grid-template-areas: 
+			"card-1 ."
+			"card-1 card-2"
+			"card-1 card-2"
+			"card-3 card-2"
+			"card-3 card-4"
+			"card-3 card-4"
+			"card-5 card-4"
+			"card-5 card-6"
+			"card-5 card-6"
+			". card-6"
+	}
 }
